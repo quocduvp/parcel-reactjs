@@ -2,16 +2,16 @@
   "name": "parcel-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "tsc": "tsc",
-    "prebuild": "cross-env NODE_ENV=production parcel build public/index.html --public-url . --out-dir build/",
-    "watch": "parcel watch public/index.html --out-dir build/"
+    "build": "cross-env NODE_ENV=production parcel build public/index.html",
+    "watch": "parcel serve public/index.html"
   },
   "devDependencies": {
     "@types/node": "^14.10.3",
+    "@types/parcel-env": "0.0.0",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
     "cross-env": "^7.0.2",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
@@ -19,13 +19,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/parcel-env": "0.0.0",
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
-    "parcel": "^1.12.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3"
+    "parcel": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "browserslist": {
     "production": [
